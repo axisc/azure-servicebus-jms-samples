@@ -7,8 +7,13 @@ This repository holds the samples for JMS 2.0 implementation for Azure Service B
 
    * Download the Java IDE of choice - [Eclipse](https://www.eclipse.org/ide/) or [IntelliJ](https://www.jetbrains.com/idea/).
    * Clone the repository - This repository contains a Maven project that can be easily imported into the IDE. Follow this [guide](https://www.omnijava.com/2016/07/10/importing-maven-projects-from-git-into-eclipse-that-were-created-by-netbeans/) for quick steps.
+   * Add Configuration - Add Service Bus Connection string to the Constants.java class.
+   
+		public static final String SERVICE_BUS_CONNECTION_STRING = "<YOUR_SERVICEBUS_CONNECTION_STRING>";
+   
    * Select each individual sample, and run as a Java Application.
-   ![Run Java Application](media/Run_Java_app.jpg)
+   
+   	![Run Java Application](media/Run_Java_app.jpg)
 
 
 ## Samples
