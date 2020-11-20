@@ -39,3 +39,10 @@ Below is a quick summary of which samples included and what they are currently t
    * A consumer is created with a message selector (JMSCorrelationID='5' AND prop1='test' OR prop2='test')
    * 1 message (which satisfies the selector conditions) is received.
    * The remaining 9 messages can be browsed using the [Service Bus Explorer](https://docs.microsoft.com/azure/service-bus-messaging/explorer).
+
+### Cross entity Transactioned Send
+
+   * Transacted session is created
+   * 2 producers are created on 2 different queues.
+   * Message is sent to the 2nd producer through the first queue.
+   * The scenario is validated by receiving from both queues to ensure the message lands in the same queue.
